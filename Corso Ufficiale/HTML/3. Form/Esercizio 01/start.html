@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no"
+    />
+    <link
+      rel="shortcut icon"
+      href="https://pbs.twimg.com/profile_images/1361808271284305924/uGWyvODw_400x400.jpg"
+    />
+    <title>Lezione HTML</title>
+    <style>
+      /* ! Reset */
+      body,
+      html {
+        font-family: "Intro", Arial, Helvetica, sans-serif;
+        font-size: 16px;
+        box-sizing: border-box;
+        margin: 0;
+        padding: 0;
+      }
+      *,
+      *:before,
+      *:after {
+        box-sizing: border-box;
+      }
+      h1,
+      h2,
+      h3,
+      h4,
+      h5,
+      h6,
+      p,
+      ol,
+      ul {
+        margin: 0 0 1rem 0;
+        padding: 0;
+      }
+      ol,
+      ul {
+        list-style-type: none;
+      }
+      img {
+        height: auto;
+      }
+      h1 {
+        font-size: 4rem;
+      }
+      h2 {
+        font-size: 3rem;
+      }
+      h3 {
+        font-size: 2rem;
+      }
+      h4 {
+        font-size: 1rem;
+      }
+      h5 {
+        font-size: 0.8rem;
+      }
+      h6 {
+        font-size: 0.6rem;
+      }
+      a {
+        text-decoration: none;
+      }
+	  
+	  /* Modifiche al FORM */
+      label {
+        display: block;
+      }
+	  
+      form * {
+        padding: 10px;
+      }
+
+      #payment-details {
+        display: flex;
+        justify-content: start;
+      }
+    </style>
+  </head>
+
+  <body>
+	<!-- Form Content -->
+    <form action="registrazione.php" method="post">
+      <h2>Completa il Form per la registrazione.</h2>
+      <div>
+        <h4>Informazioni di accesso:</h4>
+        <label for="email">Email:</label>
+        <input
+          type="email"
+          name="email"
+          id="email"
+          placeholder="Inserisci un email"
+          required
+        />
+
+        <label for="password">Password:</label>
+        <input
+          type="password"
+          name="password"
+          id="password"
+          placeholder="Inserisci una password"
+          required
+        />
+
+        <h4>Dati personali:</h4>
+        <label for="name">Nome e Cognome:</label>
+        <input
+          type="text"
+          name="Nome e Cognome"
+          id="Nome e Cognome"
+          placeholder="Inserisci Nome e Cognome"
+          required
+        />
+        <label for="date">Data di nascita:</label>
+        <input
+          type="date"
+          name="Data di nascita"
+          id="Data di nascita"
+          required
+        />
+
+        <label for="number">Numero di telefono:</label>
+        <input
+          type="tel"
+          name="numero di telefono"
+          id="numero di telefono"
+          placeholder="Telefono cellulare"
+        />
+      </div>
+      <div>
+        <h4>Scegli un piano di abbonamento:</h4>
+
+        <p>Scegli il piano più adatto alle tue esigenze:</p>
+        <label for="Free">
+          <input
+            type="radio"
+            id="Free: Funzionalità base gratuite."
+            name="fav_language"
+            value="Free: Funzionalità base gratuite."
+          />
+          <span>Free: Funzionalità base gratuite.</span>
+        </label>
+        <label for="Piano 1">
+          <input
+            type="radio"
+            id="Piano 1: Standard - €10.99/mese"
+            name="fav_language"
+            value="Piano 1: Standard - €10.99/mese"
+          />
+          <span>Piano 1: Standard - €10.99/mese</span>
+        </label>
+        <label for="Piano 2">
+          <input
+            type="radio"
+            id="Piano 2: Intermedio - €18.99/mese"
+            name="fav_language"
+            value="Piano 2: Intermedio - €18.99/mese"
+          />
+          <span>Piano 2: Intermedio - €18.99/mese</span>
+        </label>
+        <label for="Piano 3">
+          <input
+            type="radio"
+            id="Piano 3: Completo - €25.99/mese"
+            name="fav_language"
+            value="Piano 3: Completo - €25.99/mese"
+          />
+          <span>Piano 3: Completo - €25.99/mese</span>
+        </label>
+      </div>
+      <div>
+        <h4>Vantaggi PRO:</h4>
+        <label>
+          <input
+            type="checkbox"
+            id="Aggiungi i vantaggi PRO per ottenere il massimo dalla piattaforma
+		  (opzionale): € 41.99/mese"
+            value="Aggiungi i vantaggi PRO per ottenere il massimo dalla piattaforma
+		  (opzionale): € 41.99/mese"
+          />
+          <span>
+            Aggiungi i vantaggi PRO per ottenere il massimo dalla piattaforma
+            (opzionale): € 41.99/mese
+          </span>
+        </label>
+      </div>
+      <div>
+        <h4>Pagameto:</h4>
+		<select name="select" id="select">
+			<option value="Visa">Visa</option>
+			<option value="Mastercard">Mastercard</option>
+			<option value="American Express" aut>American Express</option>
+			<label>Numero Carta di Credito:</label>
+			<input
+			  type="text"
+			  name="Carta di Credito"
+			  id="Carta di Credito"
+			  required
+			/>
+		</select>
+        <div id="payment-details">
+          <span>
+            <label>CVC:</label>
+            <input type="text" name="CVC" id="CVC" required />
+          </span>
+          <span>
+            <label>Scadenza:</label>
+            <input type="month" name="scadenza" id="scadenza" required />
+          </span>
+        </div>
+      </div>
+	  <div>
+		<h4>Indirizzo di Fatturazione:</h4>
+		<label for="city">Città:</label>
+		<input type="text" name="città" id="città" placeholder="Città di nascita">
+		<label for="CAP">CAP:</label>
+		<input type="text" name="cap-city" id="cap-city" placeholder="CAP Città di nascita">
+		<label for="link">Indirizzo:</label>
+		<input type="text" name="indirizzo" id="indirizzo" placeholder="Indirizzo di abitazione">
+	  </div>
+	  <input type="submit" value="Iscriviti Subito">
+    </form>
+  </body>
+</html>

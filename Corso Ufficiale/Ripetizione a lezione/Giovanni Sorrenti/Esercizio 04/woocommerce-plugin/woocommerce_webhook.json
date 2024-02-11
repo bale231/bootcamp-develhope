@@ -1,0 +1,153 @@
+{
+  "id": 4750,
+  "parent_id": 0,
+  "number": "4750",
+  "order_key": "wc_order_Q6tuhq12KJOel",
+  "created_via": "admin",
+  "version": "3.9.1",
+  "status": "completed",
+  "currency": "EUR",
+  "date_created": "2020-03-11T16:54:40",
+  "date_created_gmt": "2020-03-11T19:54:40",
+  "date_modified": "2020-03-11T16:56:05",
+  "date_modified_gmt": "2020-03-11T19:56:05",
+  "discount_total": "0",
+  "discount_tax": "0",
+  "shipping_total": "0",
+  "shipping_tax": "0",
+  "prices_include_tax": false,
+  "customer_id": 1,
+  "customer_ip_address": "",
+  "customer_user_agent": "",
+  "customer_note": "",
+  "billing": {
+    "first_name": "Marco",
+    "last_name": "Rossi",
+    "company": "Develhope",
+    "address_1": "Via Test",
+    "address_2": "",
+    "city": "Milano",
+    "state": "IT",
+    "postcode": "1231234",
+    "country": "Milano",
+    "email": "test@test.com",
+    "phone": "999999"
+  },
+  "shipping": {
+    "first_name": "Marco",
+    "last_name": "Rossi",
+    "company": "Develhope",
+    "address_1": "Via Test",
+    "address_2": "",
+    "city": "Milano",
+    "state": "IT",
+    "postcode": "99999999",
+    "country": "Milano"
+  },
+  "payment_method": "stripe",
+  "payment_method_title": "",
+  "transaction_id": "",
+  "date_paid": "2020-03-11T16:56:05",
+  "date_paid_gmt": "2020-03-11T19:56:05",
+  "date_completed": "2020-03-11T16:56:05",
+  "date_completed_gmt": "2020-03-11T19:56:05",
+  "cart_hash": "",
+  "meta_data": [
+    {
+      "id": 91263,
+      "key": "first_name_beneficiary",
+      "value": "Juan"
+    },
+    {
+      "id": 91299,
+      "key": "slide_template",
+      "value": "default"
+    }
+  ],
+  "line_items": [
+    {
+      "id": 2593,
+      "name": "Supporto bruciatore tripla corona venturo cucina gas Smeg",
+      "product_id": 626,
+      "variation_id": 0,
+      "quantity": 1,
+      "tax_class": "",
+      "subtotal": "1590",
+      "subtotal_tax": "0",
+      "total": "1590",
+      "total_tax": "0",
+      "taxes": [],
+      "meta_data": [],
+      "sku": "5e519142e647469316de29c",
+      "price": 1590
+    },
+    {
+      "id": 2093,
+      "name": "5 SACCHETTI ASPIRAPOLVERE BIDONE ASPIRATUTTO AQUAVAC - NS 264",
+      "product_id": 621,
+      "variation_id": 0,
+      "quantity": 1,
+      "tax_class": "",
+      "subtotal": "625",
+      "subtotal_tax": "0",
+      "total": "625",
+      "total_tax": "0",
+      "taxes": [],
+      "meta_data": [],
+      "sku": "5e519da42e647439316de29c",
+      "price": 625
+    },
+    {
+      "id": 3093,
+      "name": "5 SACCHETTI ASPIRAPOLVERE CARREFOUR BVC 2000 - NS 240",
+      "product_id": 624,
+      "variation_id": 0,
+      "quantity": 2,
+      "tax_class": "",
+      "subtotal": "390",
+      "subtotal_tax": "0",
+      "total": "780",
+      "total_tax": "0",
+      "taxes": [],
+      "meta_data": [],
+      "sku": "5e519da42e647469346de29c",
+      "price": 390
+    },
+    {
+      "id": 6093,
+      "name": "FOLLETTO SPAZZOLA HD35 PER ASPIRAPOLVERE VK135 VK136 VK140 VK150 - COMPATIBILE",
+      "product_id": 694,
+      "variation_id": 0,
+      "quantity": 2,
+      "tax_class": "",
+      "subtotal": "3260",
+      "subtotal_tax": "0",
+      "total": "3260",
+      "total_tax": "0",
+      "taxes": [],
+      "meta_data": [],
+      "sku": "5e519da42e647469346de29c",
+      "price": 3260
+    }
+  ],
+  "tax_lines": [],
+  "shipping_lines": [
+    {
+      "method_id": "gls",
+      "method_title": "GLS",
+      "total": "10.00"
+    }
+  ],
+  "fee_lines": [],
+  "coupon_lines": [
+    {
+      "code": "10off",
+      "discount_type": "percent",
+      "amount": "10",
+      "individual_use": true,
+      "exclude_sale_items": true,
+      "minimum_amount": "100.00"
+    }
+  ],
+  "refunds": []
+}

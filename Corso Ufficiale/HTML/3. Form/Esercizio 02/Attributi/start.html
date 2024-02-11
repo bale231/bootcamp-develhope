@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no"
+    />
+    <link
+      rel="shortcut icon"
+      href="https://pbs.twimg.com/profile_images/1361808271284305924/uGWyvODw_400x400.jpg"
+    />
+    <title>Lezione HTML</title>
+    <style>
+      /* ! Reset */
+      body,
+      html {
+        font-family: "Intro", Arial, Helvetica, sans-serif;
+        font-size: 16px;
+        box-sizing: border-box;
+        margin: 0;
+        padding: 0;
+      }
+      *,
+      *:before,
+      *:after {
+        box-sizing: border-box;
+      }
+      h1,
+      h2,
+      h3,
+      h4,
+      h5,
+      h6,
+      p,
+      ol,
+      ul {
+        margin: 0 0 1rem 0;
+        padding: 0;
+      }
+      ol,
+      ul {
+        list-style-type: none;
+      }
+      img {
+        height: auto;
+      }
+      h1 {
+        font-size: 4rem;
+      }
+      h2 {
+        font-size: 3rem;
+      }
+      h3 {
+        font-size: 2rem;
+      }
+      h4 {
+        font-size: 1rem;
+      }
+      h5 {
+        font-size: 0.8rem;
+      }
+      h6 {
+        font-size: 0.6rem;
+      }
+      a {
+        text-decoration: none;
+      }
+
+      /* Modifiche al Main */
+      main {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        padding: 20px;
+      }
+    </style>
+  </head>
+
+  <body>
+    <main>
+      <!-- Pulsante Disattivato: -->
+      <button type="button" disabled>Pulsante Disabilitato</button>
+
+      <!-- Input Field di tipo Number: -->
+      <label for="number">Inserisci un numero da 0 a 100(step di 2):</label>
+      <input
+        type="number"
+        name="number"
+        id="number"
+        min="0"
+        max="100"
+        step="2"
+        autofocus
+      />
+
+      <!-- Checkbox con label: -->
+      <label for="Checkbox">Checkbox Selezionata:</label>
+      <input type="checkbox" name="Checkbox" id="Checkbox" checked />
+
+      <!-- Un input di tipo date: -->
+      <label for="data">Inserisci una data:</label>
+      <input type="date" name="data" id="data" />
+    </main>
+  </body>
+</html>
