@@ -70,6 +70,7 @@ table{
 
 table thead{
   border: 1px solid rgba(95, 95, 95, 0.143);
+  background-color: rgb(236, 235, 235);
 }
 
 table tbody{
@@ -167,13 +168,59 @@ input[type="number"]{
   margin-top: 10px;
 }
 
+
+/******** MODIFICHE AL FOOTER *********/
+#footer *{
+  font-family: 'Mulish', sans-serif;
+}
+
 #footer h4{
   font-family: 'Intro', Arial, Helvetica, sans-serif;
   text-align: start;
 }
 
-#footer *{
-  font-family: 'Mulish', sans-serif;
+#footer tbody tr{
+  border: 1px solid rgba(95, 95, 95, 0.143);
 }
 
-/******** MODIFICHE AL FOOTER *********/
+#footer .checkout{
+  padding: 10px 100px;
+  border: none;
+  cursor: pointer;
+  background-color: orange;
+  border-radius: 20px;
+  font-weight: bold;
+}
+
+#footer .checkout:active{
+  background-color:darkgoldenrod;
+}
+
+/************** MODIFICHE AL FORM *************/
+/* ! Reset Form */
+form{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+abbr{
+  color: red;
+}
+
+input{
+  padding: 10px;
+}
+
+/* Modifiche Generali */
+.billing{
+  display: flex;
+  justify-content: flex-start;
+  flex-direction: column;
+  padding: 10px;
+  margin: 30px;
+}
+
+.country-region option{
+  width: 15%;
+}

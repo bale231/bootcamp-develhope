@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="it">
 
 <head>
     <meta charset="UTF-8" />
@@ -15,7 +15,42 @@
     <title>Checkout</title>
 </head>
 
-<body>
+<body style="font-family: 'Intro', Arial, Helvetica, sans-serif;">
+    <form action="payment.html">
+        <!-- Title Form -->
+        <!-- Billing Details -->
+        <div class="billing">
+            <h2>Checkout</h2>
+            <h3>Billing Details</h3>
+            <label for="name">
+                <span>First Name <abbr title="*">*</abbr></span>
+                <input type="text" name="name" id="name">
+                <label for="last-name">Last Name <abbr title="*">*</abbr></label>
+                <input type="text" name="last-name" id="last-name">
+            </label>
+            <label for=""></label>
+            <label for="country-region">Country/Region <abbr title="*">*</abbr></label>
+            <select name="country-region" id="country-region">
+                <option value="united-states">United States (US)</option>
+                <option value="francia">Francia</option>
+                <option value="spagna">Spagna</option>
+                <option value="italia">Italia</option>
+                <option value="albania">Albania</option>
+                <option value="russia">Russia</option>
+            </select>
+            <label for="street-address">Street Address <abbr title="*">*</abbr></label>
+            <input type="text" name="street-address" id="street-address" placeholder="House number and street name">
+        </div>
+        <div class="order-checkout">
+            <h4>Your Order</h4>
+            <p>jhfwhflwnlwfh</p>
+            <p>jhfwhflwnlwfh</p>
+            <p>jhfwhflwnlwfh</p>
+            <p>jhfwhflwnlwfh</p>
+            <p>jhfwhflwnlwfh</p>
+            <p>jhfwhflwnlwfh</p>
+        </div>
+    </form>
     <!-- File JS -->
     <script src="/js/payment.js"></script>
 </body>

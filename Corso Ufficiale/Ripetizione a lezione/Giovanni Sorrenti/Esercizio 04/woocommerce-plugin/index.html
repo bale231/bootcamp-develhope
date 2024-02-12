@@ -21,7 +21,9 @@
     <title>Cart</title>
   </head>
   <body>
+    <!-- Container All code -->
     <div class="container">
+      <!-- Main code -->
       <main>
         <!-- Main table -->
         <table id="main">
@@ -130,7 +132,7 @@
               <td colspan="2">
                 <input type="text" name="coupon" id="coupon" placeholder="Coupon code" id="coupon"/>
                 <div class="button-active">
-                  <button type="button" id="apply-coupon"><a href="/checkout.html">Apply Coupon</a></button>
+                  <button type="button" id="apply-coupon">Apply Coupon</button>
                 </div>
               </td>
               <td colspan="2" class="button-disabled">
@@ -143,20 +145,27 @@
         <div id="final-table">
           <table id="footer">
             <thead>
-              <th><h4>Cart Total</h4></th>
+              <th colspan="4"><h4 style="margin: 0; padding: 10px;">Cart totals</h4></th>
             </thead>
             <tbody>
-              <tr>
-                <td colspan="2">Subtotal</td>
-                <td>$ 5287</td>
-              </tr>
-              <tr>
-                <td colspan="2">Total</td>
-                <td></td>
-                <td>$ 5287</td>
-              </tr>
+              <div>
+                <tr>
+                  <td>Subtotal</td>
+                  <td></td>
+                  <td>$ 5287</td>
+                </tr>
+                <tr>
+                  <td>Total</td>
+                  <td></td>
+                  <td>$ 5287</td>
+                </tr>
+              </div>
             </tbody>
-            <tfoot></tfoot>
+            <tfoot>
+              <tr>
+                <td colspan="4" style="padding: 15px;"><button type="submit" class="checkout"><a href="/checkout.html">Proceed to checkout</a></button></td>
+              </tr>
+            </tfoot>
           </table>
         </div>
       </main>
