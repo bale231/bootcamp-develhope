@@ -130,7 +130,7 @@ table td{
 }
 
 input[type="number"]{
-  width: 40px;
+  width: 45px;
   border: 1px solid rgba(0, 0, 0, 0.282);
 }
 
@@ -215,7 +215,6 @@ input{
 /* Modifiche Generali */
 .billing{
   display: flex;
-  justify-content: flex-start;
   flex-direction: column;
   padding: 10px;
   margin: 30px;
