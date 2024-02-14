@@ -1,0 +1,33 @@
+body :nth-child(2)::first-letter {
+	float: left;
+	color: darkred;
+	border: 3px ridge darkgoldenrod;
+	padding: 16px;
+	background-color: gold;
+	margin: 8px;
+}
+
+blockquote {
+	background-color: rgba(0, 0, 0, .12);
+	padding: 8px;
+}
+
+blockquote::before,
+blockquote::after{
+	content: "“";
+}
+
+a {
+	color: darkred;
+	text-decoration: none;
+	transition: 0.2s;
+}
+
+body a:hover{
+	transition: 0.2s;
+	color: red;
+}
+
+a:visited{
+	color: rgb(255, 162, 0);
+}
