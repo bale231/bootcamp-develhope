@@ -1,0 +1,168 @@
+/* ! Reset */
+body,
+html {
+    font-family: 'Intro', Arial, Helvetica, sans-serif;
+    font-size: 16px;
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+*,
+*:before,
+*:after {
+    box-sizing: border-box;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+ol {
+    margin: 0 0 1rem 0;
+    padding: 0;
+}
+
+ol,
+ul {
+    list-style-type: none;
+}
+
+img {
+    height: auto;
+}
+
+h1 {
+    font-size: 4rem;
+}
+
+h2 {
+    font-size: 3rem;
+}
+
+h3 {
+    font-size: 2rem;
+}
+
+h4 {
+    font-size: 1rem;
+}
+
+h5 {
+    font-size: 0.8rem;
+}
+
+h6 {
+    font-size: 0.6rem;
+}
+
+a {
+    text-decoration: none
+}
+
+/* Navbar */
+.menu {
+    background-color: #24242c;
+    width: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    display: flex;
+    gap: 25px;
+}
+
+.container-section ul {
+    display: flex;
+    flex-direction: row;
+    padding-inline-start: 15px;
+    gap: 20px;
+}
+
+.button-home {
+    color: #dfdfe1;
+    transition: 0.3s;
+}
+
+.button-home:hover {
+    transition: 0.3s;
+    opacity: 0.5;
+}
+
+select {
+    border: none;
+}
+
+.inherit {
+    background-color: inherit;
+    font-size: inherit;
+    color: #949497;
+    transition: 0.5s;
+}
+
+.inherit:hover {
+    color: white;
+    transition: 0.5s;
+}
+
+#disabled button {
+    background-color: inherit;
+    font-family: inherit;
+    font-size: inherit;
+    color: #949497;
+    border: none;
+    opacity: 0.5;
+    cursor: pointer;
+}
+
+#search {
+    background-color: inherit;
+    border: 1px solid #28684c;
+    border-radius: 5px;
+    padding: 10px;
+    color: #28684c;
+    font-weight: 600;
+    cursor: pointer;
+    transition: 0.5s;
+}
+
+#search:hover {
+    background-color: #28684c;
+    color: #24242c;
+    transition: 0.5s;
+}
+
+.search-container ul {
+    margin: 0;
+}
+
+.search-container input[type="text"] {
+    margin: 10px;
+    padding: 10px;
+    border: none;
+    font-family: inherit;
+    border-radius: 5px;
+}
+
+/* Footer */
+footer a {
+    color: black;
+    transition: 0.3s;
+    font-weight: 700;
+}
+
+footer a:hover {
+    color: #263238;
+    transition: 0.3s;
+}
+
+footer {
+    width: 100%;
+    padding: 5px;
+    position: fixed;
+    bottom: 0;
+    text-align: center;
+    background-color: rgb(207, 202, 202);
+}
