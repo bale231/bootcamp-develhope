@@ -1,0 +1,25 @@
+:root {
+    --bg-color-body: #011212;
+    --bg-color-ball: #ff8800;
+    --width-ball: 100px;
+    --height-ball: 100px;
+    --border-radius-ball: 30px;
+}
+
+body {
+    background-color: var(--bg-color-body);
+}
+
+.ball {
+    width: var(--width-ball);
+    height: var(--height-ball);
+    background-color: var(--bg-color-ball);
+    border-radius: var(--border-radius-ball);
+    transition: 0.5s;
+    transform: rotate(180deg);
+}
+
+.ball:hover{
+    transition: 0.5s;
+    transform: scale(20%);
+}
