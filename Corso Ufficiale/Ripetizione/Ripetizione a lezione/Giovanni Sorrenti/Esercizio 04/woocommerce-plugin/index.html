@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- File CSS -->
+    <link rel="stylesheet" href="style.css" />
+    <!-- Icona Woocommerce -->
+    <link
+      rel="shortcut icon"
+      href="https://cdn.icon-icons.com/icons2/2645/PNG/512/cart_icon_160298.png"
+    />
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Mulish&display=swap"
+      rel="stylesheet"
+    />
+    <!-- Titolo -->
+    <title>Cart</title>
+  </head>
+
+  <body>
+    <!-- Container All code -->
+    <div class="container">
+      <!-- Main code -->
+      <main>
+        <!-- Main table -->
+        <table id="main">
+          <caption id="title-table">
+            <h3>Cart</h3>
+          </caption>
+          <colgroup>
+            <col />
+            <col />
+            <col />
+            <col />
+          </colgroup>
+          <thead class="header-table">
+            <th>Product</th>
+            <th>Price</th>
+            <th>Quantity</th>
+            <th>Subtotal</th>
+          </thead>
+          <tbody class="table-main">
+            <tr>
+              <td>
+                <div class="obj">
+                  <button type="button" class="button-remove">X</button>
+                  <div>
+                    <img
+                      class="article"
+                      src="https://www.cianfroccastore.it/3002-large_default/tripla-corona-completa-bruciatore-e-spartifiamma-cromato-cucina-smeg.jpg"
+                      alt="Supporto bruciatore tripla corona venturo cucina gas Smeg"
+                      width="40px"
+                    />
+                  </div>
+                  <span
+                    >Supporto bruciatore tripla corona venturo cucina gas
+                    Smeg</span
+                  >
+                </div>
+              </td>
+              <td>1590€</td>
+              <td class="select"><input type="number" value="1" /></td>
+              <td>1590€</td>
+            </tr>
+            <tr>
+              <td>
+                <div class="obj">
+                  <button type="button" class="button-remove">X</button>
+                  <div>
+                    <img
+                      src="https://www.picclickimg.com/FXkAAOSwNd1lokH8/4-sacchetti-aspirapolvere-bidone-aspiratutto-einhell-20-L.webp"
+                      alt="5 SACCHETTI ASPIRAPOLVERE BIDONE ASPIRATUTTO AQUAVAC - NS 264"
+                      width="40px"
+                    />
+                  </div>
+                  <span
+                    >5 SACCHETTI ASPIRAPOLVERE BIDONE ASPIRATUTTO AQUAVAC - NS
+                  </span>
+                </div>
+              </td>
+              <td>625€</td>
+              <td><input class="select" type="number" value="1" /></td>
+              <td>625€</td>
+            </tr>
+            <tr>
+              <td>
+                <div class="obj">
+                  <button type="button" class="button-remove">X</button>
+                  <div>
+                    <img
+                      src="https://www.picclickimg.com/t54AAOSw91tjWlGw/Elettrocasa-Rw4-Sacchetti-Aspirapolvere-Per-Rowenta-5Pz.webp"
+                      alt="5 SACCHETTI ASPIRAPOLVERE CARREFOUR BVC 2000 - NS 240"
+                      width="40px"
+                    />
+                  </div>
+                  <span
+                    >5 SACCHETTI ASPIRAPOLVERE CARREFOUR BVC 2000 - NS 240</span
+                  >
+                </div>
+              </td>
+              <td>390€</td>
+              <td><input class="select" type="number" value="1" /></td>
+              <td>390€</td>
+            </tr>
+            <tr>
+              <td>
+                <div class="obj">
+                  <button type="button" class="button-remove">X</button>
+                  <div>
+                    <img
+                      src="https://m.media-amazon.com/images/I/61sbhH667cL.jpg"
+                      alt="FOLLETTO SPAZZOLA HD35 PER ASPIRAPOLVERE VK135 VK136 VK140 VK150 - COMPATIBILE"
+                      width="40px"
+                    />
+                  </div>
+                  <span
+                    >FOLLETTO SPAZZOLA HD35 PER ASPIRAPOLVERE VK135 VK136 VK140
+                    VK150 - COMPATIBILE</span
+                  >
+                </div>
+              </td>
+              <td>3560€</td>
+              <td><input class="select" type="number" value="1" /></td>
+              <td>3560€</td>
+            </tr>
+          </tbody>
+          <tfoot class="table-foot">
+            <tr>
+              <td colspan="2">
+                <input
+                  type="text"
+                  name="coupon"
+                  id="coupon"
+                  placeholder="Coupon code"
+                  id="coupon"
+                />
+                <div class="button-active">
+                  <button type="button" id="apply-coupon">Apply Coupon</button>
+                </div>
+              </td>
+              <td colspan="2" class="button-disabled">
+                <button type="button" disabled>Update Cart</button>
+              </td>
+            </tr>
+          </tfoot>
+        </table>
+        <!-- Final table -->
+        <div id="final-table">
+          <table id="footer">
+            <thead>
+              <th colspan="4">
+                <h4 style="margin: 0; padding: 10px">Cart totals</h4>
+              </th>
+            </thead>
+            <tbody>
+              <div>
+                <tr>
+                  <td>Subtotal</td>
+                  <td></td>
+                  <td>€ 5287</td>
+                </tr>
+                <tr>
+                  <td>Total</td>
+                  <td></td>
+                  <td>€ 5287</td>
+                </tr>
+              </div>
+            </tbody>
+            <tfoot>
+              <tr>
+                <td colspan="4" style="padding: 15px">
+                  <button type="submit" class="checkout">
+                    <a href="checkout.html">Proceed to checkout</a>
+                  </button>
+                </td>
+              </tr>
+            </tfoot>
+          </table>
+        </div>
+      </main>
+    </div>
+    
+    <!-- Footer Page -->
+    <div class="footer-page"></div>
+
+    <!-- File JS -->
+    <script src="/js/script.js"></script>
+  </body>
+</html>

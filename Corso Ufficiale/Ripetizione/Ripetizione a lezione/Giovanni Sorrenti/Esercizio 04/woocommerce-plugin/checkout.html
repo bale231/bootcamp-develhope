@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="it">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <!-- Font -->
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap"
+    />
+    <!-- CSS File -->
+    <link rel="stylesheet" href="style.css" />
+    <!-- Icon -->
+    <link rel="shortcut icon" href="checkout.ico" type="image/x-icon" />
+    <!-- Title -->
+    <title>Checkout</title>
+  </head>
+
+  <body style="font-family: 'Intro', Arial, Helvetica, sans-serif">
+    <form action="payment.html">
+      <!-- Title Form -->
+      <!-- Billing Details -->
+      <div class="billing">
+        <h2>Checkout</h2>
+        <h3>Billing Details</h3>
+        <label for="name">
+          <span>First Name <abbr title="*">*</abbr></span>
+          <input type="text" name="name" id="name" />
+          <label for="last-name">Last Name <abbr title="*">*</abbr></label>
+          <input type="text" name="last-name" id="last-name" />
+        </label>
+        <label for=""></label>
+        <label for="country-region"
+          >Country/Region <abbr title="*">*</abbr></label
+        >
+        <select name="country-region" id="country-region">
+          <option selected value="">Select Region</option>
+          <option value="asia">Asia</option>
+          <option value="africa">Africa</option>
+          <option value="australia">Australia</option>
+          <option value="europe">Europe</option>
+          <option value="middleeast">Middle East</option>
+          <option value="lamerica">Latin America</option>
+          <option value="namerica">North America</option>
+          <option value="samerica">South America</option>
+        </select>
+        <label for="street-address"
+          >Street Address <abbr title="*">*</abbr></label
+        >
+        <input
+          type="text"
+          name="street-address"
+          id="street-address"
+          placeholder="House number and street name"
+        />
+      </div>
+      <div class="order-checkout">
+        <h4>Your Order</h4>
+        <p>jhfwhflwnlwfh</p>
+        <p>jhfwhflwnlwfh</p>
+        <p>jhfwhflwnlwfh</p>
+        <p>jhfwhflwnlwfh</p>
+        <p>jhfwhflwnlwfh</p>
+        <p>jhfwhflwnlwfh</p>
+      </div>
+    </form>
+
+    <!-- Footer Page -->
+    <div class="footer-page"></div>
+
+    <!-- File JS -->
+    <script src="/js/script.js"></script>
+  </body>
+</html>

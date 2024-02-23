@@ -1,0 +1,119 @@
+/* ! Reset */
+body,
+html {
+  font-family: "Inter", Arial, Helvetica, sans-serif;
+  font-size: 13px;
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  background: #0000004f;
+}
+*,
+*:before,
+*:after {
+  box-sizing: border-box;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+ol,
+ul {
+  margin: 0 0 1rem 0;
+  padding: 0;
+}
+ol,
+ul {
+  list-style-type: none;
+}
+img {
+  height: auto;
+}
+h1 {
+  font-size: 4rem;
+}
+h2 {
+  font-size: 3rem;
+}
+h3 {
+  font-size: 2rem;
+}
+h4 {
+  font-size: 1rem;
+}
+h5 {
+  font-size: 0.8rem;
+}
+h6 {
+  font-size: 0.6rem;
+}
+a {
+  text-decoration: none;
+}
+
+/********** CONTAINER **********/
+
+/**** MENU ****/
+/* Container menu */
+.header-menu {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  background: white;
+}
+
+/* Main menu */
+.menu {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 15rem;
+}
+
+.menu ul {
+  display: flex;
+  align-items: center;
+  margin: 0;
+}
+
+.menu ul li {
+  display: flex;
+  border: 1px dashed white;
+  height: 100%;
+  padding: 8px;
+  align-items: center;
+}
+
+li ion-icon {
+  padding: 10px;
+}
+
+ion-icon {
+  font-size: 20px;
+  text-align: center;
+}
+
+ul li a {
+  border-bottom: 2px solid white;
+  color: black;
+}
+
+ul li a:hover {
+  border-bottom: 2px solid #000;
+}
+
+ul li:active {
+  border: 1px dashed black;
+}
+
+/* Button logo */
+#logo-button {
+  border: none !important;
+}
+
+.logo img {
+  width: 108px;
+}
