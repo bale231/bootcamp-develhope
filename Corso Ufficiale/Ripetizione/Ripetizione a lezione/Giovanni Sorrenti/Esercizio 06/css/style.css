@@ -1,0 +1,422 @@
+/* ! Reset */
+body,
+html {
+  font-family: "Intro", Arial, Helvetica, sans-serif;
+  font-size: 16px;
+  color: #5b5867;
+  box-sizing: border-box;
+  position: relative;
+  margin: 0;
+  padding: 0;
+}
+
+*,
+*:before,
+*:after {
+  box-sizing: border-box;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+ol {
+  margin: 0 0 1rem 0;
+  padding: 0;
+}
+
+ol,
+ul {
+  list-style-type: none;
+}
+
+img {
+  height: auto;
+}
+
+h1 {
+  font-size: 4rem;
+}
+
+h2 {
+  font-size: 3rem;
+}
+
+h3 {
+  font-size: 1.5rem;
+}
+
+h4 {
+  font-size: 1rem;
+}
+
+h5 {
+  font-size: 0.8rem;
+}
+
+h6 {
+  font-size: 0.6rem;
+}
+
+a {
+  text-decoration: none;
+}
+
+/* Navbar */
+.header-menu {
+  width: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  display: flex;
+  z-index: 100;
+  align-items: center;
+  background-color: #202528;
+}
+
+/* Subsection menu */
+.menu {
+  display: flex;
+  align-items: center;
+}
+
+.container-section ul {
+  display: flex;
+  flex-direction: row;
+  padding-inline-start: 15px;
+  gap: 20px;
+}
+
+/* Home button */
+.button-home {
+  color: #dfdfe1;
+  transition: 0.3s;
+}
+
+.button-home:hover {
+  transition: 0.3s;
+  opacity: 0.5;
+}
+
+/* Dropdown stylize */
+select {
+  border: none;
+  appearance: none;
+  padding: 0 30px 0 1em;
+  background: url(https://upload.wikimedia.org/wikipedia/commons/9/9d/Caret_down_font_awesome_whitevariation.svg)
+      no-repeat right 0.3em center/1.1em,
+    linear-gradient(
+      to left,
+      rgba(255, 255, 255, 0) 3em,
+      rgba(255, 255, 255, 0) 3em
+    );
+}
+
+/* General class of element */
+.inherit {
+  background-color: inherit;
+  font-size: inherit;
+  color: #949497;
+  transition: 0.5s;
+}
+
+.inherit:hover {
+  color: white;
+  transition: 0.5s;
+}
+
+/* Button disabled stylize */
+#disabled button {
+  background-color: inherit;
+  font-family: inherit;
+  font-size: inherit;
+  color: #949497;
+  border: none;
+  opacity: 0.5;
+  cursor: pointer;
+}
+
+/* Search Section */
+#search {
+  background-color: inherit;
+  border: 1px solid #28684c;
+  border-radius: 5px;
+  padding: 10px;
+  color: #28684c;
+  font-weight: 600;
+  cursor: pointer;
+  transition: 0.5s;
+}
+
+#search:hover {
+  background-color: #28684c;
+  color: white;
+  transition: 0.5s;
+}
+
+.search-container ul {
+  margin: 0;
+}
+
+.search-container input[type="text"] {
+  margin: 10px;
+  padding: 10px;
+  border: none;
+  font-family: inherit;
+  border-radius: 5px;
+}
+
+/****** Modifiche al main *****/
+main {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* Section */
+section {
+  background-color: #f8f7fa;
+  width: max-content;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  padding: 15px;
+  border-radius: 10px;
+  gap: 20px;
+}
+
+.first-section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 10px;
+}
+
+.first-section button {
+  background-color: #e2dff8;
+  color: #8379f0;
+  border: none;
+  border-radius: 3px;
+  padding: 3px 5px;
+  margin-bottom: 20px;
+  transition: 0.3s;
+}
+
+.first-section button:hover {
+  cursor: help;
+  background-color: #c3c0da;
+}
+
+.first-section #title-form {
+  animation: animation 2s ease-in 0s 1 normal forwards;
+  line-height: 50px;
+  font-size: 30px;
+}
+
+.first-section span {
+  animation: animation 3s ease 0s 1 normal forwards;
+}
+
+.second-section {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 30px;
+}
+
+/* Section info */
+.info-obj {
+  padding: 5px;
+  width: 500px;
+  border: 1px solid rgba(0, 0, 0, 0.339);
+  overflow: hidden;
+  border-radius: 6px;
+  animation: animContact 2s ease-in 0s 1 normal forwards;
+  border-top-left-radius: 11%;
+}
+
+.info-obj header {
+  overflow: hidden;
+  border-radius: 6px;
+  border-top-left-radius: 12%;
+}
+
+.info-obj img {
+  width: 100%;
+}
+
+.info-ico {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  gap: 40px;
+  padding: 15px;
+  font-size: 1em;
+}
+
+.first-ico {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 30px !important;
+  background-color: #e2dff8;
+  color: #8379f0;
+  border-radius: 5px;
+  padding: 5px;
+  transition: 0.3s;
+}
+
+.first-ico:hover {
+  background-color: #8379f0;
+  color: white;
+}
+
+.second-ico {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 30px !important;
+  background-color: #d6efe4;
+  color: #28c76f;
+  border-radius: 5px;
+  padding: 5px;
+  transition: 0.3s;
+}
+
+.second-ico:hover {
+  background-color: #28c76f;
+  color: white;
+}
+
+.email {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+}
+
+.email span {
+  display: block;
+}
+
+.email div {
+  font-size: 14px;
+}
+
+.phone {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+}
+
+.phone span {
+  display: block;
+}
+
+.phone div {
+  font-size: 14px;
+}
+/**** Form obj *****/
+.form-obj {
+  background-color: white;
+  animation: animation 2s ease-in 0s 1 normal forwards;
+  border-radius: 5px;
+  padding: 20px;
+  font-size: 14px;
+}
+
+.form-obj h3 {
+  margin-bottom: 0;
+}
+
+.form-obj p {
+  line-height: 25px;
+}
+
+.info-form {
+  display: flex;
+  gap: 20px;
+}
+
+label {
+  margin-bottom: 10px;
+  font-size: 15px;
+}
+
+.form-obj input {
+  border: 1px solid rgba(0, 0, 0, 0.198);
+  padding: 10px;
+  width: 100%;
+  border-radius: 6px;
+}
+
+.info-form div {
+  width: 100%;
+}
+
+/* Message Form */
+.message-form {
+  margin-top: 10px;
+}
+
+.message-form label {
+  display: inline-block;
+}
+
+textarea {
+  width: 100%;
+  height: 150px;
+  padding: 12px 20px;
+  box-sizing: border-box;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  font-size: inherit;
+  resize: none;
+}
+
+/* Button send message */
+#sendMessage {
+  margin-top: 10px;
+  border: none;
+  border-radius: 5px;
+  background-color: #7367f0;
+  font-weight: bolder;
+  cursor: pointer;
+  color: white;
+  padding: 10px 20px;
+}
+
+#sendMessage:active {
+  background-color: #5449cf;
+}
+/******* MODIFICHE AL FOOTER DELLA PAGINA ********/
+.footer-page {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  background-color: #202528;
+  color: white;
+  text-align: center;
+  padding: 5px;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, Segoe UI, Roboto,
+    Oxygen, Ubuntu, Cantarell, Open Sans, Helvetica Neue, sans-serif;
+  font-size: medium;
+}
+
+.footer-page a {
+  color: black;
+  transition: 0.5s;
+}
+
+.footer-page a:hover {
+  color: #2d3582;
+  transition: 0.5s;
+}

@@ -1,0 +1,40 @@
+/*  ------------------------------------
+    Animation section contact
+---------------------------------------- */
+@keyframes animation {
+  0% {
+    opacity: 0;
+    transform: translateX(50px);
+  }
+
+  100% {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+@keyframes animForm {
+  0% {
+    opacity: 0;
+    transform: rotate(-540deg) scale(0);
+    transform-origin: 100% 50%;
+  }
+
+  100% {
+    opacity: 1;
+    transform: rotate(0) scale(1);
+    transform-origin: 100% 50%;
+  }
+}
+
+@keyframes animContact {
+  0% {
+    opacity: 0;
+    transform: translateY(-50px);
+  }
+
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}

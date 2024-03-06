@@ -2,25 +2,159 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
-    <meta name="description" content="Section contact form" />
-    <meta name="keywords" content="css,contact,ex,develhope" />
+    <meta http-equiv="Content-Type" content="text/html;charset=UTF-8" />
     <meta name="author" content="Luigi Balestrucci" />
-    <!-- Title -->
-    <title>Contact US</title>
-    <!-- Font -->
-    <link
-      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap"
-      rel="stylesheet"
-    />
+    <meta name="description" content="Exercise Navbar" />
+    <meta name="keywords" content="navbar, menu, header page" />
+    <!-- Icon -->
+    <link rel="shortcut icon" href="https://student.develhope.co/favicon.ico" />
     <!-- File CSS -->
-    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="/css/style.css" />
+    <link rel="stylesheet" href="/css/responsive.css" />
+    <link rel="stylesheet" href="/css/animation.css">
+    <!-- Script ico -->
+    <script
+      type="module"
+      src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"
+    ></script>
+    <script
+      nomodule
+      src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"
+    ></script>
+    <!-- Title -->
+    <title>Layout Page</title>
   </head>
+
   <body>
+    <!-- Container all -->
+    <div class="container">
+      <!-- Menu page -->
+      <header class="header-menu">
+        <!-- Icon hamburger mobile -->
+        <!-- Menu -->
+        <div class="icon-hamburger">
+          <div></div>
+          <div></div>
+          <div></div>
+        </div>
+        <nav class="menu">
+          <!-- Subsection menu -->
+          <div class="container-section">
+            <ul>
+              <li>
+                <a href="index.html" class="button-home"
+                  ><strong>Navbar</strong></a
+                >
+              </li>
+              <li>
+                <a href="index.html" class="button-home"
+                  ><strong>Home</strong></a
+                >
+              </li>
+              <li class="dropdown"><a class="inherit" href="#">Link</a></li>
+              <li>
+                <select name="dropdown" class="inherit">
+                  <option>Dropdown</option>
+                </select>
+              </li>
+              <li id="disabled"><button disabled>Disabled</button></li>
+            </ul>
+          </div>
+          <!-- Search section menu -->
+          <div class="search-container">
+            <ul>
+              <li>
+                <a href="#"
+                  ><input type="text" placeholder="Search" autofocus
+                /></a>
+                <a href="#"
+                  ><input type="button" id="search" value="Search"
+                /></a>
+              </li>
+            </ul>
+          </div>
+        </nav>
+      </header>
+
+      <main>
+        <section>
+          <div class="first-section">
+            <button>Contact US</button>
+            <span id="title-form"><strong>let's work</strong> together</span>
+            <span>Any question or remark? just write us a message</span>
+          </div>
+          <div class="second-section">
+            <div class="info-obj">
+              <header>
+                <img
+                  src="https://images.unsplash.com/photo-1560264418-c4445382edbc?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+                  alt="Staff di supporto"
+                />
+              </header>
+              <div class="info-ico">
+                <div class="email">
+                  <div class="first-ico">
+                    <ion-icon name="mail-outline"></ion-icon>
+                  </div>
+                  <div>
+                    <span>Email</span>
+                    <span><strong>example@gmail.com</strong></span>
+                  </div>
+                </div>
+                <div class="phone">
+                  <div class="second-ico">
+                    <ion-icon name="call-outline"></ion-icon>
+                  </div>
+                  <div>
+                    <span>Phone</span>
+                    <span><strong>+1234 568 963</strong></span>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="form-obj">
+              <form action="/index.html" method="get">
+                <h3>Send a message</h3>
+                <p>
+                  if you would like to discuss anything related to payment,
+                  account, licensing, partnerships, or have pre-sales questions,
+                  you're at <br />
+                  the right place.
+                </p>
+
+                <div class="info-form">
+                  <div>
+                    <label for="name">Full Name</label>
+                    <input type="text" name="name" id="name-form" placeholder="John Doe" required/>
+                  </div>
+                  <div>
+                    <label for="email">Email address</label>
+                    <input
+                      type="email"
+                      name="email"
+                      id="email-form"
+                      placeholder="johndoe@gmail.com"
+                      required
+                    />
+                  </div>
+                </div>
+                <div class="message-form">
+                  <label for="message">Message</label>
+                  <textarea name="message" id="textarea" cols="30" rows="10" required></textarea>
+                </div>
+                <button id="sendMessage" type="submit">Send Inquiry</button>
+              </form>
+            </div>
+          </div>
+        </section>
+      </main>
+    </div>
     <!-- Footer Page -->
     <div class="footer-page"></div>
+
     <!-- File JS -->
-    <script src="script.js"></script>
+    <script src="/js/script.js"></script>
   </body>
 </html>

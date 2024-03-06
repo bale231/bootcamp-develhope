@@ -1,0 +1,75 @@
+/* ! Reset */
+body,
+html {
+  font-family: "Inter", Arial, Helvetica, sans-serif;
+  font-size: 16px;
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+*,
+*:before,
+*:after {
+  box-sizing: border-box;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+ol,
+ul {
+  margin: 0 0 1rem 0;
+  padding: 0;
+}
+ol,
+ul {
+  list-style-type: none;
+}
+img {
+  height: auto;
+}
+h1 {
+  font-size: 4rem;
+}
+h2 {
+  font-size: 3rem;
+}
+h3 {
+  font-size: 2rem;
+}
+h4 {
+  font-size: 1rem;
+}
+h5 {
+  font-size: 0.8rem;
+}
+h6 {
+  font-size: 0.6rem;
+}
+a {
+  text-decoration: none;
+}
+
+/* ! CONTAINER */
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+  padding: 10%;
+}
+
+/* ! Card Lord of the Rings */
+.card {
+  border: none !important;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.277);
+  transition: all 0.5s cubic-bezier(0.215, 0.61, 0.355, 1);
+}
+
+.card:hover {
+  box-shadow: 0px 25px 10px;
+  transform: translateY(-15px);
+}

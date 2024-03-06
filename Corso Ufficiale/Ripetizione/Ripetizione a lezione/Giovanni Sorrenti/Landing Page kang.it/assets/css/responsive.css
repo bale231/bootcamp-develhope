@@ -1,0 +1,65 @@
+/* -------------------------------------------------------------------------------- */
+/* ! MEDIAQUERY FOR TABLET */
+/* -------------------------------------------------------------------------------- */
+@media (max-width: 1024px) {
+  /* Responsive design first section*/
+  .info-preview p {
+    padding: 0;
+  }
+
+  .preview-kang {
+    background: url(/img/logo-kang.png) no-repeat center center;
+    background-size: contain;
+    background-color: #0f8da3;
+  }
+
+  .info-icon {
+    flex-wrap: wrap;
+  }
+
+  .info-preview {
+    padding: 20px;
+    width: 100% !important;
+  }
+
+  /* ! FORM RESPONSIVE DESIGN */
+  .visible {
+    height: 100%;
+  }
+
+  .container-form {
+    width: 100%;
+    right: 0;
+    position: absolute;
+    border-radius: 0px;
+    align-items: center;
+  }
+
+  .container-form form {
+    border-radius: 0;
+  }
+
+  form {
+    width: 100%;
+  }
+  /* Second section responsive design */
+  .logo-services {
+    flex-wrap: wrap;
+  }
+}
+
+/* -------------------------------------------------------------------------------- */
+/* ! MEDIAQUERY FOR SMARTPHONE */
+/* -------------------------------------------------------------------------------- */
+@media (max-width: 768px) {
+  .info-kang {
+    flex-wrap: wrap;
+  }
+}
+
+@media (max-width: 425px) {
+  .text-info {
+    width: 80%;
+    text-align: center;
+  }
+}

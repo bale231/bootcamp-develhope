@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- Icon -->
+    <link rel="shortcut icon" href="https://student.develhope.co/favicon.ico" />
+    <title>Local Storage</title>
+    <style>
+      body {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI",
+          Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue",
+          sans-serif;
+        height: 100vh;
+        background: linear-gradient(
+            0deg,
+            rgb(9, 9, 9) 0%,
+            rgba(255, 255, 255, 0) 100%
+          ),
+          url(/img/bg-img.jpg) no-repeat center center;
+      }
+
+      .container {
+        background: rgba(255, 255, 255, 0.263);
+        backdrop-filter: blur(10px);
+        color: white;
+        padding: 10px 30px;
+        text-align: center;
+        border-radius: 5px;
+      }
+      .form {
+        display: flex;
+        flex-direction: column;
+        max-width: 300px;
+        gap: 16px;
+        margin-bottom: 16px;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <h1>Il form di <span class="title-name"></span></h1>
+      <div class="form">
+        <label for="email">Email</label>
+        <input type="email" name="email" class="email" placeholder="email" required/>
+        <label for="firstname">Name</label>
+        <input
+          type="text"
+          name="firstname"
+          class="firstname"
+          placeholder="firstname"
+          required
+        />
+        <label for="lastname">Surname</label>
+        <input
+          type="text"
+          name="lastname"
+          class="lastname"
+          placeholder="lastname"
+          required
+        />
+      </div>
+      <button class="btn">Salva</button>
+      <p class="printedform"></p>
+    </div>
+
+    <!-- File JS -->
+    <script src="script.js"></script>
+  </body>
+</html>

@@ -1,0 +1,85 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+@font-face {
+    font-family: "Morn";
+    src: url(Fonts/Morn-Thin.otf) format("truetype");
+  }
+  
+
+section{
+    
+    display: flex;
+    flex-flow: row wrap;
+    gap: 50px;
+    justify-content: center;
+    align-content: center;
+    width: 100vw;
+    height: 700px;
+    padding: 40px;
+    background-image: url(/image/apexbig.jpg.webp);
+    background-size: cover;
+}
+
+.container1{
+    width: 400px;
+    height: 400px;
+    background-color: transparent;
+}
+
+.container2{
+    display: flex;
+    justify-content: center;
+    flex-flow: column wrap;
+    align-items: center;
+    width: 400px;
+    height:400px;
+    background-repeat: no-repeat;
+    background-size: cover;
+
+}
+.btn{
+    width: 286px;
+    height: 59px;
+    padding: 16px 24px;
+    font-size: 17px;
+    border-radius: 4px;
+    font:"morn";
+    border:none;
+    margin-top: 30px;
+    cursor: pointer;
+    transition: 0.3;
+    background-color: red;
+    color: white;
+  }
+
+ 
+
+@media screen and (max-width: 425px)  {
+    section{
+        width: 100%;
+    }
+    .container1{
+        display:none;
+    }
+  section {
+background-image: url(https://media.discordapp.net/attachments/1213051732834385970/1213051756024696832/apex-320w.jpg?ex=65f4117c&is=65e19c7c&hm=6ff8d01cbd0b2581dfa3a36499faba4766c2bd9ec9ca810458fa8c148850dc43&=&format=webp&width=526&height=1053);
+  }
+}
+
+@media screen and (max-width: 768px) {
+    .container1{
+        display: none;
+    }
+    section {
+        background-image: url(https://media.discordapp.net/attachments/1213051732834385970/1213051763070865418/apex-768w.jpg?ex=65f4117d&is=65e19c7d&hm=56ee33cbd425a0c27e82066842ff3517fba5bea27975d81926be95795e590e53&=&format=webp&width=526&height=1053);
+          }
+}
+
+@media screen and (max-width: 926px) {
+    .container1{
+        display: none;
+    }
+}
