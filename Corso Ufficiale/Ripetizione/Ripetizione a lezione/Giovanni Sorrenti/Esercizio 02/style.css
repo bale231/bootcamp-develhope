@@ -70,60 +70,34 @@ a {
 
 /* Container all */
 .container {
-  width: 100vw;
+  width: 100%;
   height: 100vh;
+
   display: flex;
   justify-content: center;
   align-items: center;
+  flex-direction: column;
   position: relative;
 }
 
+.general-container-quiz-select {
+  transition: all 1s cubic-bezier(0.215, 0.61, 0.355, 1);
+}
 /******* Stylize card ********/
 /* Card */
 .card {
-  width: max-content;
-  padding: 10px;
+  padding: 4%;
+  margin: 8% 0;
   background-color: white;
   border-radius: 30px;
+  box-shadow: 2px 2px 5px 0px rgba(0, 0, 0, 0.5);
+  transition: all 1s cubic-bezier(0.215, 0.61, 0.355, 1);
 }
 
-/* Class to add animation */
-.toggle-active {
-  -webkit-animation-name: slideOutLeft;
-  animation-name: slideOutLeft;
-  -webkit-animation-duration: 1s;
-  animation-duration: 1s;
-  -webkit-animation-fill-mode: both;
-  animation-fill-mode: both;
+.start-select {
+  padding: 20px;
+  min-width: 250px;
 }
-
-@-webkit-keyframes slideOutLeft {
-  0% {
-    -webkit-transform: translateX(0);
-    transform: translateX(0);
-  }
-
-  100% {
-    visibility: hidden;
-    -webkit-transform: translateX(-100%);
-    transform: translateX(-100%);
-  }
-}
-
-@keyframes slideOutLeft {
-  0% {
-    -webkit-transform: translateX(0);
-    transform: translateX(0);
-  }
-
-  100% {
-    visibility: hidden;
-    -webkit-transform: translateX(-100%);
-    transform: translateX(-400%);
-  }
-}
-
-
 /* Header */
 header {
   padding: 20px;
@@ -146,47 +120,101 @@ label {
   padding: 10px;
 }
 
-.container-button button {
+.invia-risposte {
   border: none;
   border-radius: 5px;
   background-color: #7294b7;
   color: white;
   padding: 13px;
   font-size: 17px;
-  cursor: pointer;
 }
 
-.toggle-activated{
-    background-color: #527aa2 !important;
+#invia-risposte-giuste {
+  border: none;
+  border-radius: 5px;
+  background-color: #7294b7;
+  color: white;
+  padding: 13px;
+  font-size: 17px;
+}
+
+.btn-activated-select{
+  cursor: pointer;
+  background-color: #527aa2;
+}
+
+.btn-activated-select:active {
+  background-color: #35618d;
+}
+
+.btn-activated{
+  cursor: pointer;
+  background-color: #527aa2;
+}
+
+.btn-activated:active {
+  background-color: #35618d;
 }
 
 .container-button a {
   color: white;
 }
 
-.container-button button:active {
-  background-color: #527aa2;
+/* Animazione che rimuove il quiz */
+.quiz1,
+.quiz2 {
+  -webkit-animation-name: slideInLeft;
+  animation-name: slideInLeft;
+  -webkit-animation-duration: 1.5s;
+  animation-duration: 1.5s;
+  -webkit-animation-fill-mode: both;
+  animation-fill-mode: both;
 }
-
 /* Footer */
+/******* MODIFICHE AL FOOTER DELLA PAGINA ********/
 .footer-page {
   width: 100%;
-  padding: 5px;
-  position: absolute;
-  bottom: 0;
-  left: 0;
-  font-size: 16px;
+  background-color: rgba(128, 128, 128, 0.333);
   text-align: center;
-  background-color: rgb(207, 202, 202);
+  padding: 5px;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, Segoe UI, Roboto,
+    Oxygen, Ubuntu, Cantarell, Open Sans, Helvetica Neue, sans-serif;
+  font-size: medium;
 }
-
 .footer-page a {
   color: black;
-  transition: 0.3s;
-  font-weight: 700;
+  transition: 0.5s;
+}
+.footer-page a:hover {
+  color: #2d3582;
+  transition: 0.5s;
 }
 
-.footer-page a:hover {
-  color: #263238;
-  transition: 0.3s;
+/* ----------------------------------------- */
+/* ! ANIMATION CODE CSS */
+/* ----------------------------------------- */
+@-webkit-keyframes slideInLeft {
+  0% {
+    visibility: hidden;
+    -webkit-transform: translateX(-100%);
+    transform: translateX(-100%);
+  }
+
+  100% {
+    -webkit-transform: translateX(0);
+    transform: translateX(0);
+  }
+}
+
+@keyframes slideInLeft {
+  0% {
+    visibility: hidden;
+    -webkit-transform: translateX(-100%);
+    transform: translateX(-400%);
+  }
+
+  100% {
+    -webkit-transform: translateX(0);
+    transform: translateX(0);
+  }
 }
