@@ -165,7 +165,6 @@ Sviluppare applicazioni desktop (es. Electron, Qt)
 Sviluppare applicazioni mobile (es. React Native, Ionic)
 
 Vantaggi di usare un NGX:
-
 Facilità d'uso
 Flessibilità
 Estensibilità
@@ -189,4 +188,14 @@ CMS (Content Management System) è un software che permette di creare e gestire 
 
 Installare certificato SSL in locale;
 XAMPP, e Laragon;
-Stack Lamp: 
+
+--------------------------------------------
+                STACK LAMP    
+--------------------------------------------
+Lo stack LAMP è un insieme di tecnologie open source utilizzate per creare applicazioni web dinamiche. Si compone di:
+
+Linux: il sistema operativo;
+Apache: il server web;
+MySQL: il database;
+PHP: il linguaggio di scripting lato server;
+LAMP è una scelta popolare per lo sviluppo web perché è gratuito, flessibile e scalabile.

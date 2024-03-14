@@ -140,7 +140,7 @@ label {
 
 .btn-activated-select{
   cursor: pointer;
-  background-color: #527aa2;
+  background-color: #527aa2 !important;
 }
 
 .btn-activated-select:active {

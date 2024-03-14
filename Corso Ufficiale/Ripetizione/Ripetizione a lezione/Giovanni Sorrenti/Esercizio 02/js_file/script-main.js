@@ -14,15 +14,12 @@ let containerAll = document.querySelector('.container');
 let quizAnimals = document.querySelector('.quiz1');
 let quizHistory = document.querySelector('.quiz2');
 //Prendo il form e i vari input:
-let form = document.querySelector('form');
 let item = document.querySelector('.invia-risposte');
 let input = document.querySelectorAll('input');
-let btnAnswer = document.querySelector('#invia-risposte-giuste');
 
 //Dati recuperati dal database:
 let quiz1 = ['Tigre', 'Giraffa', 'Leone', 'Gatto', 'Pappagallo'];
 let quiz2 = ['Napoleone', 'Cesare', 'Camillo Benso', 'Badoglio', 'Mussolini'];
-let score = 0;
 
 //Dati ricevuti da Front-End
 class quizApp {
@@ -30,11 +27,16 @@ class quizApp {
     this.data = [];
   }
 
-  selezionaQuiz(quizSelezionato, ...risposte) {
+  selezionaQuiz(quizSelezionato) {
     this.data.push({
       quizType: quizSelezionato,
-      answers: [...risposte],
       mailReceived: false
+    })
+  }
+
+  ricezioneRisposte(risposte) {
+    this.data.push({
+      answers: [risposte]
     })
   }
 
@@ -43,12 +45,17 @@ class quizApp {
   }
 
   checkScore(arr) {
-    this.data.answers.forEach(answer => {
+    let score = 0;
+    this.data[1].answers.forEach(answer => {
       //TODO: Verificare le risposte;
-      if (answer === arr[this.data.answers.indexOf(answer)]) {
+      if (answer === arr[this.data[1].answers.indexOf(answer)]) {
         score++
       }
     });
+
+    alert(`Il tuo punteggio è ${score}`)
+
+    score = 0;
   }
 
   checkError() {
@@ -382,67 +389,54 @@ inputQuiz.addEventListener('submit', (e) => {
     cardSelection.style.position = 'absolute';
     containerAll.style.height = '100%'
   }
+
+  let btnAnswer = document.querySelector('#invia-risposte-giuste');
+  let inputQuiz = document.querySelectorAll('input');
+  inputQuiz.forEach(quizSelected => {
+    quizSelected.addEventListener("click", function (e) {
+      btnAnswer.classList.add('btn-activated-select');
+      btnAnswer.removeAttribute('disabled');
+    });
+    // Recupero il valore di ogni risposta
+    const answerValue = quizSelected.value;
+    // Aggiungo le risposte all'array
+    appQuiz.ricezioneRisposte(answerValue);
+  })
+  console.log(appQuiz.data);
+
+  let form = document.getElementById('form-quiz');
+  form.addEventListener('submit', (e) => {
+    //Blocco il reload della pagina all'invio del form:
+    e.preventDefault();
+
+
+    // if (appQuiz.data[1].answers.length >= 5) {
+    //   alert('Verifica delle risposte in corso...')
+    //   card.classList.add('rimuovi-quiz');
+    //   if (appQuiz.data.quizType === 'quiz1') {
+    //     //Utente ha selezionato Quiz Animali.
+    //     appQuiz.checkScore(quiz1)
+    //     appQuiz.data[1].answers = [];
+    //   } else if (appQuiz.data.quizType === 'quiz2') {
+    //     //Utente ha selezionato Quiz Storico.
+    //     appQuiz.checkScore(quiz2)
+    //     appQuiz.data[1].answers = [];
+    //   } else {
+    //     //Richiamo la funzione di gestione degli errori se tutte le condizioni non si verificano.
+    //     appQuiz.checkError();
+    //   }
+    // } else {
+    //   alert('Seleziona le risposte richieste!!')
+    // }
+  })
 })
 
 btnActivatedSelect();
 
-let tigre = document.getElementById('tigre');
-console.log(tigre);
-//Evento che al click mi rende il bottone del quiz visibile:
-// if (quizAnimals.innerHTML) {
-//   console.log('sono qui');
-//   // input.forEach(quizSelected => {
-//   //   quizSelected.addEventListener("click", function () {
-//   //     btnAnswer.classList.add('btn-activated');
-//   //     btnAnswer.removeAttribute('disabled');
-//   //   });
-//   // })
-// }else{
-//   console.log('non sono qui');
-// }
-
-// if (data.quizType === 1) {
-//     //Utente ha selezionato Quiz Animali.
-//     checkScore(quiz1)
-// } else if (data.quizType === 2) {
-//     //Utente ha selezionato Quiz Storico.
-//     checkScore(quiz2)
-// } else {
-//     //Richiamo la funzione di gestione degli errori se tutte le condizioni non si verificano.
-//     checkError()
-// };
-
-// input.forEach(quizSelected => {
-// });
-
-// appQuiz.selezionaQuiz('quiz1', 'come stai', 'che dici')
-
-
-
-
 //Mando le risposte all'invio delle risposte:
-// form.addEventListener('submit', (e) => {
-//   //Blocco il reload della pagina all'invio del form:
-//   e.preventDefault();
-//   //Controllo ogni singolo input del quiz:
-//   input.forEach(element => {
-//     // Recupero il valore di ogni risposta
-//     const answerValue = element.value;
-//     // Aggiungo le risposte all'array
-//     appQuiz.data.forEach(answers => {
-//       answers.answers.push(answerValue);
-//     });
-//   })
 
-//   console.log(appQuiz.data);
-//   // //Rimuovo il quiz completato:
-//   // if (appQuiz.data.answers.length >= 5) {
-//   //   alert('Verifica delle risposte in corso...')
-//   //   card.classList.add('rimuovi-quiz');
-//   // } else {
-//   //   alert('Seleziona le risposte richieste!!')
-//   // }
-// })
+console.log(appQuiz.data);   // //Rimuovo il quiz completato:
+
   //TODO: Capire quale quiz ha scelto l'utente;
   //TODO: Calcolare il punteggio delle risposte;
   //TODO: Mostra punteggio ottenuto;
