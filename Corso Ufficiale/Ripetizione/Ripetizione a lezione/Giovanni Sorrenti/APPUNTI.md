@@ -199,3 +199,5 @@ Apache: il server web;
 MySQL: il database;
 PHP: il linguaggio di scripting lato server;
 LAMP è una scelta popolare per lo sviluppo web perché è gratuito, flessibile e scalabile.
+
+UUID DA VEDERE!!!

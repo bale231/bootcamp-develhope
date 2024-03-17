@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="shortcut icon" href="img/1486504834-cloud-clouds-cloudy-sky-cloud-computing-storage-weather_81351.svg"
+        type="image/x-icon">
+    <title>App Meteo</title>
+    <!-- Font -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap" rel="stylesheet">
+    <!-- File CSS -->
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <div class="container">
+
+        <header class="header">
+            <div class="header__content">
+                <a class="header__logo" href="index.html">
+                    <img src="/img/1486504834-cloud-clouds-cloudy-sky-cloud-computing-storage-weather_81351.svg"
+                        alt="logo meteo">
+                </a>
+                <ul class="header__menu">
+                    <li><input type="text" name="localita" id="localita" required></li>
+                    <li><button type="submit" id="btn-search">Cerca località</button></li>
+                </ul>
+                <div class="header__quick">
+                    <a href="#">Contacts</a>
+                    <div class="icon-hamburger">
+                        <span></span>
+                        <span></span>
+                    </div>
+                </div>
+            </div>
+        </header>
+
+        <main>
+            <div class="card">
+                <div class="container-meteo">
+                    <div class="cloud front">
+                        <span class="left-front"></span>
+                        <span class="right-front"></span>
+                    </div>
+                    <span class="sun sunshine"></span>
+                    <span class="sun"></span>
+                    <div class="cloud back">
+                        <span class="left-back"></span>
+                        <span class="right-back"></span>
+                    </div>
+                </div>
+
+                <div class="container-info-meteo"></div>
+            </div>
+        </main>
+        <script>
+            let item = document.querySelector('.icon-hamburger');
+            item.addEventListener("click", function () {
+                document.body.classList.toggle('menu-open');
+            });
+        </script>
+    </div>
+
+    <!-- File JS -->
+    <script src="script.js"></script>
+</body>
+
+</html>

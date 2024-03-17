@@ -6,12 +6,12 @@ const lastName = document.querySelector('.lastname');
 const message = document.querySelector('.printedform');
 
 //Function to send data in local storage:
-function setForm(email, name, surname){
-    if(email === '' || name === '' || surname === ''){
+function setForm(email, name, surname) {
+    if (email === '' || name === '' || surname === '') {
         message.innerText = 'Inserire i dati nei campi richiesti!';
-    }else{
+    } else {
         nameForm.innerText = name;
-        localStorage.setItem('my-email', email);
+        localStorage.setItem('mia-email', email);
         localStorage.setItem('my-firstname', name);
         localStorage.setItem('my-lastname', surname);
         message.innerText = 'Form inviato con successo!';
@@ -29,6 +29,6 @@ const savedEmail = localStorage.getItem('my-email');
 const savedName = localStorage.getItem('my-firstname');
 const savedLastname = localStorage.getItem('my-lastname');
 
-if(savedEmail && savedName && savedLastname){
+if (savedEmail && savedName && savedLastname) {
     setForm(savedEmail, savedName, savedLastname);
 }
