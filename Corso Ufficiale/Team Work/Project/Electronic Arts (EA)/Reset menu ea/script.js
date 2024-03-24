@@ -3,8 +3,8 @@ const mainContent = document.querySelector('main');
 
 //Add on click event to close all menu:
 mainContent.addEventListener('click', () => {
-    infoSuperiorMenu.classList.remove('opened-info-superior')
-    submenuSuperiorProfile.classList.remove('opened-user-superior')
+    document.body.classList.remove('opened-info-superior')
+    document.body.classList.remove('opened-user-superior')
     document.body.classList.remove('overflow-disabled-user')
     document.body.classList.remove('overflow-disabled-info')
 })
@@ -38,8 +38,10 @@ closeSidebar.addEventListener('click', () => {
 
 containerBlack.addEventListener('click', () => {
     document.body.classList.remove('sidebar-open')
-    infoSuperiorMenu.classList.remove('opened-info-superior')
-    submenuSuperiorProfile.classList.remove('opened-user-superior')
+    document.body.classList.remove('opened-info-superior')
+    document.body.classList.remove('opened-user-superior')
+    document.body.classList.remove('overflow-disabled-user')
+    document.body.classList.remove('overflow-disabled-info')
 })
 
 //Take subnavbar superior and icon to click:
@@ -55,28 +57,28 @@ const closerInfo = document.querySelector('.info-closing')
 
 //Add class to open menu user on click:
 userIcon.addEventListener('click', () => {
-    submenuSuperiorProfile.classList.toggle('opened-user-superior')
+    document.body.classList.toggle('opened-user-superior')
     document.body.classList.toggle('overflow-disabled-user')
     document.body.classList.remove('overflow-disabled-info')
-    infoSuperiorMenu.classList.remove('opened-info-superior')
+    document.body.classList.remove('opened-info-superior')
 })
 
 //Add class to open menu info on click:
 infoIcon.addEventListener('click', () => {
-    infoSuperiorMenu.classList.toggle('opened-info-superior')
+    document.body.classList.toggle('opened-info-superior')
     document.body.classList.toggle('overflow-disabled-info')
     document.body.classList.remove('overflow-disabled-user')
-    submenuSuperiorProfile.classList.remove('opened-user-superior')
+    document.body.classList.remove('opened-user-superior')
 })
 
 //Remove class to click closer element:
 closer.addEventListener('click', () => {
-    submenuSuperiorProfile.classList.remove('opened-user-superior')
+    document.body.classList.remove('opened-user-superior')
     document.body.classList.remove('overflow-disabled-user')
 })
 
 closerInfo.addEventListener('click', () => {
-    infoSuperiorMenu.classList.remove('opened-info-superior')
+    document.body.classList.remove('opened-info-superior')
     document.body.classList.remove('overflow-disabled-info')
 })
 

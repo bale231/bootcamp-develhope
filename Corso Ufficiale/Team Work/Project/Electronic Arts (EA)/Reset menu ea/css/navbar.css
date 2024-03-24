@@ -197,6 +197,12 @@ a {
   transition: all 0.5s cubic-bezier(0.5, 0.25, 0.015, 1);
 }
 
+#title-info {
+  font-family: "Oswald", sans-serif;
+  font-weight: bolder;
+  font-size: 18px;
+}
+
 .container-options {
   display: flex;
   opacity: 0;
@@ -225,6 +231,7 @@ a {
   font-size: 16px !important;
   font-weight: 100;
   text-align: center;
+  line-height: 1.35;
 }
 
 .logo-subscribe {
@@ -239,20 +246,24 @@ a {
   width: 100%;
 }
 
-.opened-user-superior {
+.opened-user-superior .user-superior {
   height: 400px;
   visibility: visible;
+}
+
+.opened-user-superior .superior-navbar .user {
+  opacity: 1 !important;
 }
 
 .overflow-disabled-user {
   overflow: hidden !important;
 }
 
-.opened-user-superior .container-options {
+.opened-user-superior .user-superior .container-options {
   opacity: 1;
 }
 
-.opened-user-superior .closer-icon {
+.opened-user-superior .user-superior .closer-icon {
   top: 40px;
   opacity: 1;
 }
@@ -272,33 +283,39 @@ a {
   display: flex;
   flex-direction: column;
   align-items: center;
-  gap: 20px;
+  gap: 40px;
 }
 
 .info-superior .container-options {
   gap: 50px;
 }
 
-.opened-info-superior {
+.opened-info-superior .info-superior {
   height: 400px;
   visibility: visible;
 }
 
-.opened-info-superior .container-options {
+.opened-info-superior .info-superior .container-options {
   opacity: 1;
 }
 
-.opened-info-superior .closer-icon {
+.opened-info-superior .info-superior .closer-icon {
   top: 40px;
   opacity: 1;
 }
 
-.opened-info-superior p {
+.opened-info-superior .info-superior p {
   opacity: 1;
+  font-size: 14px;
+  line-height: 1.35;
 }
 
 .overflow-disabled-info {
   overflow: hidden !important;
+}
+
+.opened-info-superior .superior-navbar .info {
+  opacity: 1;
 }
 /* ! Inferior Navbar */
 #inferior-navbar {
@@ -447,6 +464,15 @@ a {
 
 .open-games .games .container-section-menu {
   color: #ff4747;
+}
+
+.explore_games_list {
+  opacity: 0;
+  transition: all 1s cubic-bezier(0.215, 0.61, 0.355, 1);
+}
+
+.open-games .explore_games_list {
+  opacity: 1;
 }
 
 .games .subsection-menu {
@@ -616,7 +642,7 @@ a {
   position: relative;
   cursor: pointer;
   margin-bottom: 30px;
-  width: 282px;
+  width: 281px;
 }
 .ea-lazy-img img {
   width: 100%;
@@ -642,6 +668,7 @@ a {
 .ea-container-img {
   display: flex;
   gap: 30px;
+  padding-bottom: 40%;
 }
 
 .container-image {
@@ -701,5 +728,9 @@ a {
 }
 
 .sidebar-open .icon-menu-start {
+  opacity: 0.7;
+}
+
+.sidebar-open .icon-menu-start:hover {
   opacity: 1;
 }
